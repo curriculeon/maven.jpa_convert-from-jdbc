@@ -1,7 +1,12 @@
 # JDBC to JPA MVC
 
-* **Objective** - To convert from jdbc architecture to jpa architecture
+* **Objective** - To convert from jdbc architecture to jpa architecture.
 * **Purpose** - To gain familiarity with JPA
+* **Description**
+  * Using the patterns in this project as a reference
+    1. create a new `model`, `dao`, `controller`, `orm`, `service`, and respective `*.sql` files.
+    2. write unit tests to cover the newly created code
+* Read more about this JPA and JDBC by clicking [here](./README-jpa.md)
 
 
 

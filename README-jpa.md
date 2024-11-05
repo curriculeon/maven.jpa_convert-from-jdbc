@@ -398,116 +398,116 @@ ORDER BY	i.title;
 		* wraps around class-paths of classes to be persisted.
 
 
-	* `property` tag tells persistence context:
-		* which JDBC driver to use
-		* where the database is located
-		* username
-		* password
-		* a property with a name prefixed with `javax.persistence.` is _portable_; it will be interpreted by all JPA provider implementations.
+* `property` tag tells persistence context:
+	* which JDBC driver to use
+	* where the database is located
+	* username
+	* password
+	* a property with a name prefixed with `javax.persistence.` is _portable_; it will be interpreted by all JPA provider implementations.
 
 
-		* The below xml snippet is an example of a property configuration such that
-			* `javax.persistence.jdbc.driver`
-				* tells persistence context which JDBC driver to use
-			* `javax.persistence.jdbc.url`
-				* where the database is located
-			* `javax.persistence.jdbc.user`
-				* user name
-			* `javax.persistence.jdbc.password`
-				* password
+	* The below xml snippet is an example of a property configuration such that
+		* `javax.persistence.jdbc.driver`
+			* tells persistence context which JDBC driver to use
+		* `javax.persistence.jdbc.url`
+			* where the database is located
+		* `javax.persistence.jdbc.user`
+			* user name
+		* `javax.persistence.jdbc.password`
+			* password
 
-			* `database-product-name`
-				* the persistence context must perform mapping on a specified-type database, `Derby`
-					* (`Oracle`, `MySQL`, or `DB2` are also valid)
-			* `schema-generation.database.action`
-				* instructs provider to drop and create the database schema
-			* `schema-generation.scripts.action`
-				* the persistence context can generate the DDL scripts of the database.
-				* this attribute enforces the setting of `schema-generation.scripts.create-target`
-				* this attribute enforces the setting of `schema-generation.scripts.drop-target`
-			* `schema-generation.scripts.create-target`
-				* name of file which contains all `CREATE` statements
-			* `schema-generation.scripts.drop-target`
-				* name of file which contains all `DROP` statements
+		* `database-product-name`
+			* the persistence context must perform mapping on a specified-type database, `Derby`
+				* (`Oracle`, `MySQL`, or `DB2` are also valid)
+		* `schema-generation.database.action`
+			* instructs provider to drop and create the database schema
+		* `schema-generation.scripts.action`
+			* the persistence context can generate the DDL scripts of the database.
+			* this attribute enforces the setting of `schema-generation.scripts.create-target`
+			* this attribute enforces the setting of `schema-generation.scripts.drop-target`
+		* `schema-generation.scripts.create-target`
+			* name of file which contains all `CREATE` statements
+		* `schema-generation.scripts.drop-target`
+			* name of file which contains all `DROP` statements
 
 
-			```xml
-			<properties>
-				 <property name="javax.persistence.jdbc.driver"
-				      value="org.hsqldb.jdbcDriver"/>
-				
-				<property name="javax.persistence.jdbc.url"
-				      value="objectdb://localhost/my.odb"/>
-				
-				<property name="javax.persistence.jdbc.user"
-				      value="root"/>
-				
-				
-				<property name="javax.persistence.jdbc.password"
-				      value=""/>
-                      
-				<property name="javax.persistence.database-product-name"
-					value = "Derby"/>
-					
-				<property name="javax.persistence.schema-generation.database.action"
-					value = "drop-and-create"/>
+```xml
+<properties>
+	 <property name="javax.persistence.jdbc.driver"
+		  value="org.hsqldb.jdbcDriver"/>
+	
+	<property name="javax.persistence.jdbc.url"
+		  value="objectdb://localhost/my.odb"/>
+	
+	<property name="javax.persistence.jdbc.user"
+		  value="root"/>
+	
+	
+	<property name="javax.persistence.jdbc.password"
+		  value=""/>
+		  
+	<property name="javax.persistence.database-product-name"
+		value = "Derby"/>
+		
+	<property name="javax.persistence.schema-generation.database.action"
+		value = "drop-and-create"/>
 
-				<property name="javax.persistence.schema-generation.scripts.action"
-					value="drop-and-create"/>
+	<property name="javax.persistence.schema-generation.scripts.action"
+		value="drop-and-create"/>
 
-				<property name="javax.persistence.schema-generation.scripts.create-target"
-					value="create.ddl"/>
+	<property name="javax.persistence.schema-generation.scripts.create-target"
+		value="create.ddl"/>
 
-				<property name="javax.persistence.schema-generation.scripts.drop-target"
-					value="drop.ddl"/>
-					
-				<property name="eclipselink.logging.level"
-					value="INFO"/>
-			</properties>
-			```
+	<property name="javax.persistence.schema-generation.scripts.drop-target"
+		value="drop.ddl"/>
+		
+	<property name="eclipselink.logging.level"
+		value="INFO"/>
+</properties>
+```
 	
 
 
 
-	* `provider` tag tells each persistence context
-		* Having issues with this? 
-		* Visit this [gist of different provider configuration](https://gist.github.com/sudiptasharif/7ef40d5a495bced5f15710cbe8fb268a)
-			* [resource1](https://stackoverflow.com/questions/40683423/i-cant-find-resolve-persistenceexception-no-persistence-provider-for-entityman)
-			* [resource2](https://stackoverflow.com/questions/39410183/hibernate-5-2-2-no-persistence-provider-for-entitymanager)
+* `provider` tag tells each persistence context
+	* Having issues with this? 
+	* Visit this [gist of different provider configuration](https://gist.github.com/sudiptasharif/7ef40d5a495bced5f15710cbe8fb268a)
+		* [resource1](https://stackoverflow.com/questions/40683423/i-cant-find-resolve-persistenceexception-no-persistence-provider-for-entityman)
+		* [resource2](https://stackoverflow.com/questions/39410183/hibernate-5-2-2-no-persistence-provider-for-entitymanager)
 
-		* [Hibernate implementation](https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager/3.3.2.GA)
-			* `persistence.xml`
+	* [Hibernate implementation](https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager/3.3.2.GA)
+		* `persistence.xml`
 
-				```xml
-				<provider>org.hibernate.ejb.HibernatePersistence</provider>
-				```
-			* `pom.xml`
+```xml
+<provider>org.hibernate.ejb.HibernatePersistence</provider>
+```
+* `pom.xml`
 
-				```xml
-				<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-				<dependency>
-				    <groupId>org.hibernate</groupId>
-				    <artifactId>hibernate-entitymanager</artifactId>
-				    <version>3.3.2.GA</version>
-				    <type>pom</type>
-				</dependency>
-				```
+```xml
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+<dependency>
+	<groupId>org.hibernate</groupId>
+	<artifactId>hibernate-entitymanager</artifactId>
+	<version>3.3.2.GA</version>
+	<type>pom</type>
+</dependency>
+```
 
 
 
-		* [EclipseLink implementation](https://mvnrepository.com/artifact/org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.1)
-			* `persistence.xml`
+* [EclipseLink implementation](https://mvnrepository.com/artifact/org.eclipse.persistence/org.eclipse.persistence.jpa/2.7.1)
+  * `persistence.xml`
 
-				```xml
-				<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-				```
+```xml
+<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+```
 
-			* `pom.xml`
+* `pom.xml`
 
-				```xml
-				<dependency>
-				    <groupId>org.eclipse.persistence</groupId>
-				    <artifactId>eclipselink</artifactId>
-				    <version>2.5.0</version>
-				</dependency>
-				```
+```xml
+<dependency>
+	<groupId>org.eclipse.persistence</groupId>
+	<artifactId>eclipselink</artifactId>
+	<version>2.5.0</version>
+</dependency>
+```
