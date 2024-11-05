@@ -1,10 +1,10 @@
 package com.github.curriculeon;
 
-import com.github.curriculeon.controllers.PersonController;
-import com.github.curriculeon.dao.PersonJpaRepository;
-import com.github.curriculeon.routers.ControllerRouter;
-import com.github.curriculeon.service.PersonService;
-import com.github.curriculeon.utils.IOConsole;
+import com.github.curriculeon.api.controllers.PersonController;
+import com.github.curriculeon.api.dao.PersonJpaRepository;
+import com.github.curriculeon.lib.routers.ControllerRouter;
+import com.github.curriculeon.api.service.PersonService;
+import com.github.curriculeon.lib.utils.IOConsole;
 
 import java.util.Arrays;
 import java.util.StringJoiner;

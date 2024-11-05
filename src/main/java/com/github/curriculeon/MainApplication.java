@@ -1,7 +1,8 @@
 package com.github.curriculeon;
 
-import com.github.curriculeon.config.ConfigurationInterface;
-import com.github.curriculeon.config.JpaConfigurator;
+import com.github.curriculeon.lib.DatabaseConnection;
+import com.github.curriculeon.lib.config.ConfigurationInterface;
+import com.github.curriculeon.lib.config.JpaConfigurator;
 
 /**
  * Created by leon on 8/13/2020.

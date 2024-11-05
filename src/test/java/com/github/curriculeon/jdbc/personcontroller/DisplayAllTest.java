@@ -1,11 +1,11 @@
 package com.github.curriculeon.jdbc.personcontroller;
 
-import com.github.curriculeon.DatabaseConnection;
-import com.github.curriculeon.config.ConfigurationInterface;
-import com.github.curriculeon.config.JdbcConfigurator;
-import com.github.curriculeon.controllers.PersonController;
-import com.github.curriculeon.dao.PersonJdbcRepository;
-import com.github.curriculeon.service.PersonService;
+import com.github.curriculeon.lib.DatabaseConnection;
+import com.github.curriculeon.lib.config.ConfigurationInterface;
+import com.github.curriculeon.lib.config.JdbcConfigurator;
+import com.github.curriculeon.api.controllers.PersonController;
+import com.github.curriculeon.api.dao.PersonJdbcRepository;
+import com.github.curriculeon.api.service.PersonService;
 import org.junit.Before;
 import org.junit.Test;
 

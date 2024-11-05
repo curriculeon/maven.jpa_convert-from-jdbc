@@ -1,10 +1,10 @@
 package com.github.curriculeon.jpa.personservice;
 
-import com.github.curriculeon.DatabaseConnection;
-import com.github.curriculeon.config.JpaConfigurator;
-import com.github.curriculeon.dao.PersonJpaRepository;
-import com.github.curriculeon.model.Person;
-import com.github.curriculeon.service.PersonService;
+import com.github.curriculeon.lib.DatabaseConnection;
+import com.github.curriculeon.lib.config.JpaConfigurator;
+import com.github.curriculeon.api.dao.PersonJpaRepository;
+import com.github.curriculeon.api.Person;
+import com.github.curriculeon.api.service.PersonService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
