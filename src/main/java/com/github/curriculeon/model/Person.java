@@ -1,5 +1,8 @@
 package com.github.curriculeon.model;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import javax.persistence.*;
 
 /**
@@ -65,11 +68,15 @@ public class Person implements EntityInterface<Long> {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "id=" + id +
-                ", email='" + email + '\'' +
-                ", name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        try {
+            return new ObjectMapper().writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            return "Person{" +
+                    "id=" + id +
+                    ", email='" + email + '\'' +
+                    ", name='" + name + '\'' +
+                    ", password='" + password + '\'' +
+                    '}';
+        }
     }
 }
