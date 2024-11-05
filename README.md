@@ -6,7 +6,7 @@
   * Using the patterns in this project as a reference
     1. create a new `model`, `dao`, `controller`, `orm`, `service`, and respective `*.sql` files.
     2. write unit tests to cover the newly created code
-* Read more about this JPA and JDBC by clicking [here](./README-jpa.md)
+* Read more about this JPA and JDBC by clicking [here](./index.md)
 
 
 
