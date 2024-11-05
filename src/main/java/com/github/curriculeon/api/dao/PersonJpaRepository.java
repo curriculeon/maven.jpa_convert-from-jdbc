@@ -2,7 +2,7 @@ package com.github.curriculeon.api.dao;
 
 import com.github.curriculeon.api.Person;
 import com.github.curriculeon.api.PersonBuilder;
-import com.github.curriculeon.lib.AbstractJpaRepository;
+import com.github.curriculeon.lib.repository.AbstractJpaRepository;
 
 /**
  * Created by leon on 8/17/2020.

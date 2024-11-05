@@ -1,6 +1,6 @@
 package com.github.curriculeon.lib.routers;
 
-import com.github.curriculeon.lib.ControllerInterface;
+import com.github.curriculeon.lib.controller.ControllerInterface;
 
 import java.util.function.Consumer;
 

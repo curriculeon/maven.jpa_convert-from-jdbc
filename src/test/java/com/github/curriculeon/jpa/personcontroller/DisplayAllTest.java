@@ -1,6 +1,6 @@
 package com.github.curriculeon.jpa.personcontroller;
 
-import com.github.curriculeon.lib.DatabaseConnection;
+import com.github.curriculeon.lib.connection.DatabaseConnection;
 import com.github.curriculeon.lib.config.JpaConfigurator;
 import com.github.curriculeon.api.controllers.PersonController;
 import com.github.curriculeon.api.dao.PersonJpaRepository;

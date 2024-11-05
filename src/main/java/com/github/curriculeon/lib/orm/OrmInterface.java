@@ -1,6 +1,6 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.orm;
 
-import com.github.curriculeon.lib.EntityInterface;
+import com.github.curriculeon.lib.model.EntityInterface;
 
 import java.sql.ResultSet;
 import java.util.List;

@@ -1,9 +1,9 @@
 package com.github.curriculeon.jpa.personrepository;
 
-import com.github.curriculeon.lib.DatabaseConnection;
+import com.github.curriculeon.lib.connection.DatabaseConnection;
 import com.github.curriculeon.lib.config.JpaConfigurator;
 import com.github.curriculeon.api.dao.PersonJpaRepository;
-import com.github.curriculeon.lib.RepositoryInterface;
+import com.github.curriculeon.lib.repository.RepositoryInterface;
 import com.github.curriculeon.api.Person;
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,6 +1,6 @@
 package com.github.curriculeon.jdbc.personservice;
 
-import com.github.curriculeon.lib.DatabaseConnection;
+import com.github.curriculeon.lib.connection.DatabaseConnection;
 import com.github.curriculeon.lib.config.ConfigurationInterface;
 import com.github.curriculeon.lib.config.JdbcConfigurator;
 import com.github.curriculeon.api.dao.PersonJdbcRepository;

@@ -1,4 +1,4 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.connection;
 
 import com.github.curriculeon.lib.utils.ConnectionBuilder;
 import com.github.curriculeon.lib.utils.IOConsole;

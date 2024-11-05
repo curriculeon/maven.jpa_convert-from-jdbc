@@ -1,6 +1,6 @@
 package com.github.curriculeon.lib.utils;
 
-import com.github.curriculeon.lib.DatabaseConnectionInterface;
+import com.github.curriculeon.lib.connection.DatabaseConnectionInterface;
 
 import java.lang.reflect.Field;
 

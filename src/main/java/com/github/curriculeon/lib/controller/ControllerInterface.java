@@ -1,6 +1,6 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.controller;
 
-import com.github.curriculeon.lib.ServiceInterface;
+import com.github.curriculeon.lib.service.ServiceInterface;
 
 public interface ControllerInterface<ServiceType extends ServiceInterface> {
     ServiceType getService();

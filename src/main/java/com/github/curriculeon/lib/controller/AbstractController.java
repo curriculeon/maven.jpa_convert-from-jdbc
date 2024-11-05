@@ -1,4 +1,6 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.controller;
+
+import com.github.curriculeon.lib.service.ServiceInterface;
 
 /**
  * Created by leon on 8/14/2020.

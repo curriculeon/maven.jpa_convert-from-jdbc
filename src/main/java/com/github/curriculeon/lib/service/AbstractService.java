@@ -1,4 +1,7 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.service;
+
+import com.github.curriculeon.lib.model.EntityInterface;
+import com.github.curriculeon.lib.repository.RepositoryInterface;
 
 import java.io.Serializable;
 

@@ -1,9 +1,9 @@
 package com.github.curriculeon.api.dao;
 
 
-import com.github.curriculeon.lib.AbstractJdbcRepository;
-import com.github.curriculeon.lib.DatabaseConnection;
-import com.github.curriculeon.lib.DatabaseConnectionInterface;
+import com.github.curriculeon.lib.repository.AbstractJdbcRepository;
+import com.github.curriculeon.lib.connection.DatabaseConnection;
+import com.github.curriculeon.lib.connection.DatabaseConnectionInterface;
 import com.github.curriculeon.api.Person;
 import com.github.curriculeon.api.PersonBuilder;
 import com.github.curriculeon.api.orm.PersonOrm;

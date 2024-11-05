@@ -1,6 +1,6 @@
 package com.github.curriculeon.lib.utils;
 
-import com.github.curriculeon.lib.EntityInterface;
+import com.github.curriculeon.lib.model.EntityInterface;
 
 /**
  * Created by leon on 8/14/2020.

@@ -1,4 +1,4 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.connection;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

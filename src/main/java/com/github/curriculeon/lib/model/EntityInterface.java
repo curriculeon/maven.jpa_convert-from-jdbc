@@ -1,4 +1,4 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.model;
 
 import java.io.Serializable;
 

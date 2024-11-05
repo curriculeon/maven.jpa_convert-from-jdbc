@@ -2,7 +2,7 @@ package com.github.curriculeon.api;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.curriculeon.lib.EntityInterface;
+import com.github.curriculeon.lib.model.EntityInterface;
 
 import javax.persistence.*;
 

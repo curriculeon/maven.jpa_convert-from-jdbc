@@ -1,4 +1,6 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.repository;
+
+import com.github.curriculeon.lib.model.EntityInterface;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

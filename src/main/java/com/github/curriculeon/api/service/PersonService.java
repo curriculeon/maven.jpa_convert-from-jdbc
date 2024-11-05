@@ -1,8 +1,8 @@
 package com.github.curriculeon.api.service;
 
-import com.github.curriculeon.lib.RepositoryInterface;
+import com.github.curriculeon.lib.repository.RepositoryInterface;
 import com.github.curriculeon.api.Person;
-import com.github.curriculeon.lib.AbstractService;
+import com.github.curriculeon.lib.service.AbstractService;
 
 /**
  * Created by leon on 8/13/2020.

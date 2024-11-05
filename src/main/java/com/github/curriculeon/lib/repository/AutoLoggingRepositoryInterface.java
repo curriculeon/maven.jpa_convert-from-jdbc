@@ -1,5 +1,6 @@
-package com.github.curriculeon.lib;
+package com.github.curriculeon.lib.repository;
 
+import com.github.curriculeon.lib.model.EntityInterface;
 import com.github.curriculeon.lib.utils.Loggable;
 
 import java.io.Serializable;
