@@ -1,7 +1,7 @@
 package com.github.curriculeon.api.controllers;
 
-import com.github.curriculeon.api.Person;
-import com.github.curriculeon.api.PersonBuilder;
+import com.github.curriculeon.api.model.Person;
+import com.github.curriculeon.api.model.PersonBuilder;
 import com.github.curriculeon.lib.controller.AbstractController;
 import com.github.curriculeon.api.service.PersonService;
 import com.github.curriculeon.lib.utils.IOConsole;

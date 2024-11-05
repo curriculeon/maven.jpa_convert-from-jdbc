@@ -1,4 +1,4 @@
-package com.github.curriculeon.api;
+package com.github.curriculeon.api.model;
 
 public class PersonBuilder {
     private Long id;

@@ -4,7 +4,7 @@ import com.github.curriculeon.lib.connection.DatabaseConnection;
 import com.github.curriculeon.lib.config.JpaConfigurator;
 import com.github.curriculeon.api.dao.PersonJpaRepository;
 import com.github.curriculeon.lib.repository.RepositoryInterface;
-import com.github.curriculeon.api.Person;
+import com.github.curriculeon.api.model.Person;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

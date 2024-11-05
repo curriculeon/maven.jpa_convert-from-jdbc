@@ -3,7 +3,7 @@ package com.github.curriculeon.jpa.personservice;
 import com.github.curriculeon.lib.connection.DatabaseConnection;
 import com.github.curriculeon.lib.config.JpaConfigurator;
 import com.github.curriculeon.api.dao.PersonJpaRepository;
-import com.github.curriculeon.api.Person;
+import com.github.curriculeon.api.model.Person;
 import com.github.curriculeon.api.service.PersonService;
 import org.junit.Assert;
 import org.junit.Before;

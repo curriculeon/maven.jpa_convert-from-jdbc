@@ -1,4 +1,4 @@
-package com.github.curriculeon.api;
+package com.github.curriculeon.api.model;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

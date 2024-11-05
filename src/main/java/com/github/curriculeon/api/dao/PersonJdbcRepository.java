@@ -4,8 +4,8 @@ package com.github.curriculeon.api.dao;
 import com.github.curriculeon.lib.repository.AbstractJdbcRepository;
 import com.github.curriculeon.lib.connection.DatabaseConnection;
 import com.github.curriculeon.lib.connection.DatabaseConnectionInterface;
-import com.github.curriculeon.api.Person;
-import com.github.curriculeon.api.PersonBuilder;
+import com.github.curriculeon.api.model.Person;
+import com.github.curriculeon.api.model.PersonBuilder;
 import com.github.curriculeon.api.orm.PersonOrm;
 
 import java.sql.ResultSet;

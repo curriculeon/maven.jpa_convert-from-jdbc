@@ -1,7 +1,7 @@
 package com.github.curriculeon.api.orm;
 
-import com.github.curriculeon.api.Person;
-import com.github.curriculeon.api.PersonBuilder;
+import com.github.curriculeon.api.model.Person;
+import com.github.curriculeon.api.model.PersonBuilder;
 import com.github.curriculeon.lib.orm.OrmInterface;
 
 import java.sql.ResultSet;

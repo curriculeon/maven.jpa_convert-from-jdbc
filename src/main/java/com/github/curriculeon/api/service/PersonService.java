@@ -1,7 +1,7 @@
 package com.github.curriculeon.api.service;
 
 import com.github.curriculeon.lib.repository.RepositoryInterface;
-import com.github.curriculeon.api.Person;
+import com.github.curriculeon.api.model.Person;
 import com.github.curriculeon.lib.service.AbstractService;
 
 /**

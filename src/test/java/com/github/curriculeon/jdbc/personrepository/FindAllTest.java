@@ -5,7 +5,7 @@ import com.github.curriculeon.lib.config.ConfigurationInterface;
 import com.github.curriculeon.lib.config.JdbcConfigurator;
 import com.github.curriculeon.api.dao.PersonJdbcRepository;
 import com.github.curriculeon.lib.repository.RepositoryInterface;
-import com.github.curriculeon.api.Person;
+import com.github.curriculeon.api.model.Person;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
